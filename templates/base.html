@@ -20,13 +20,14 @@
 
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
+<body class="d-flex flex-column h-100 main-bg bg-light">
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">Gamernetic</a>
+            <img src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653756017/gamernetic-logo_rhodyj.png"
+                alt="Gamernetic logo" width="130" height="130" class="d-inline-block align-text-top">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,18 +35,19 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active text-uppercase fw-bold" aria-current="page"
+                            href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Logout</a>
+                        <a class="nav-link text-uppercase" href="#">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link text-uppercase" href="#">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link text-uppercase" href="#">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -63,13 +65,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3">
-        <p class="text-center text-dark">Made by Jordan Brookfield</p>
+    <footer class="footer mt-auto bg-light py-3">
+
         <p class="text-center text-dark">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-steam"></i>
+        </p>
+        <p class="text-center text-dark">© Jordan Brookfield. All Rights Reserved.</p>
     </footer>
 </body>
 
