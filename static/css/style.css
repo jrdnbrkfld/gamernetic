@@ -39,8 +39,7 @@ body {
 .image-flash {
     position: absolute;
     bottom: 0%;
-    min-width: 30%;
-    left: 0px;
+    left: 0%;
     background-color: crimson;
 }
 
