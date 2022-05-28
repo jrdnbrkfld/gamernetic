@@ -26,8 +26,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <img src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653756017/gamernetic-logo_rhodyj.png"
-                alt="Gamernetic logo" width="130" height="130" class="d-inline-block align-text-top">
+            <a href="/" class="navbar-brand">
+                <img src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653756017/gamernetic-logo_rhodyj.png"
+                    alt="Gamernetic logo" width="130" height="130" class="d-inline-block align-text-top">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,28 +37,45 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-uppercase fw-bold" aria-current="page"
+                        <a class="nav-link active text-uppercase fw-bold fs-6" id="nav-active" aria-current="page"
                             href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Logout</a>
+                        <a class="nav-link text-uppercase fs-6" id="nav-path" href="#">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Register</a>
+                        <a class="nav-link text-uppercase fs-6" href="#">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Login</a>
+                        <a class="nav-link text-uppercase fs-6" href="#">Login</a>
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    Lorem ipsum dolor sit amet
-                </span>
             </div>
         </div>
     </nav>
+
+    <!-- Header image -->
+
+    <header>
+        <div class="container-fluid" id="image">
+            <div class="row px-4 text-center">
+                <img class="img-fluid header-image"
+                    src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg"
+                    alt="blue/pink background image">
+                <div class="col-lg-6 mx-auto">
+                    <div class="caption">
+                        <div class="text-center-caption">
+                            <h1 class="display-5 fw-bolder text-shadow">GAMERNETIC</h1>
+                            <h2 class="lead text-shadow fw-bold">For gamers // By gamers</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main class="flex-shrink-0 main-bg">
         {% block content %}
@@ -66,14 +85,39 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto bg-light py-3">
-
-        <p class="text-center text-dark">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-steam"></i>
-        </p>
-        <p class="text-center text-dark">© Jordan Brookfield. All Rights Reserved.</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 text-center">
+                    <ul class="list-unstyled fs-2">
+                        <li>
+                            <a href="https://twitter.com/Jord_Dev" target="_blank" aria-label="Link to Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none" href="https://www.linkedin.com/in/jordanbrookfield/"
+                                target="_blank" aria-label="Link to LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none" href="https://github.com/jrdnbrkfld" target="_blank"
+                                aria-label="Link to Github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none"
+                                href="https://steamcommunity.com/profiles/76561198025609181/" target="_blank"
+                                aria-label="Link to Steam">
+                                <i class="fa-brands fa-steam"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="text-center text-dark fs-6 fw-bold">© Jordan Brookfield. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
