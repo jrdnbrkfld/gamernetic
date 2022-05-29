@@ -4,9 +4,9 @@ body {
     color: black;
 }
 
-/* navigation bar */
+/* navigation links */
 
-#nav-active {
+.nav-active:hover {
     color: crimson;
 }
 
@@ -55,6 +55,12 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
+}
+
+.post-caption {
+    background-color: crimson;
+    color: black;
+    text-align: center;
 }
 
 /* footer */

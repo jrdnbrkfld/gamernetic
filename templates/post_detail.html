@@ -15,14 +15,14 @@
             {% endif %}
         </div>
     </div>
-    <div class="row m-2 g-0 justify-content-md-center">
-        <div class="col-md-auto masthead-text text-center justify-content-md-center">
-            <h1 class="post-title">{{ post.title }}</h1>
-            <p class="post-subtitle">{{ post.author }} // {{ post.created_on }}</p>
-        </div>
-    </div>
 </div>
 
+<div class="post-caption mt-4">
+    <div class="text-center-caption">
+        <h1 class="post-title fw-bolder">{{ post.title }}</h1>
+        <p class="post-subtitle fw-bold">{{ post.author }} // {{ post.created_on }}</p>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
