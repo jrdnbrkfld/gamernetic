@@ -7,7 +7,8 @@
         <div class="row g-0">
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg" width="100%">
+                <img src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg"
+                    width="100%">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -24,7 +25,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
+        <div class="col card mb-4 mt-3 left top" id="card-style">
             <div class="card-body">
                 <p class="card-text ">
                     {{ post.content | safe }}
@@ -50,9 +51,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 ">
+        <div class="col-md-8 card mb-4 mt-3">
             <h3>Comments:</h3>
-            <div class="card-body">
+            <div>
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
@@ -67,7 +68,8 @@
             </div>
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
-            <div class="card-body">
+            <div>
+
             </div>
         </div>
     </div>
