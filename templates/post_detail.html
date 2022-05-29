@@ -5,16 +5,18 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row g-0">
-            <div class="col-md-6 masthead-text border-dark">
-                <h1 class="post-title">{{ post.title }}</h1>
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
-            </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <img src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg" width="100%">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-md-6 masthead-text border-dark">
+                <h1 class="post-title">{{ post.title }}</h1>
+                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
         </div>
     </div>

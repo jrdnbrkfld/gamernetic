@@ -1,6 +1,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
+    color: black;
 }
 
 /* navigation bar */
@@ -53,6 +54,7 @@ body {
     color: crimson;
     text-transform: uppercase;
     font-weight: bold;
+    display: inline-block;
 }
 
 /* footer */
