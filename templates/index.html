@@ -7,7 +7,7 @@
 <header>
     <div class="container-fluid" id="image">
         <div class="row px-4 text-center">
-            <img class="img-fluid header-image rounded-5"
+            <img class="img-fluid header-image"
                 src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg"
                 alt="blue/pink background image">
             <div class="col-lg-6 mx-auto">
@@ -28,7 +28,7 @@
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
-                    <div class="card mb-4" id="card-style">
+                    <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
@@ -38,7 +38,7 @@
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="author text-dark" id="author">Author: {{ post.author }}</p>
+                                    <p class="author fw-bold" id="author">Author: {{ post.author }}</p>
                                 </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="link-dark text-decoration-none">

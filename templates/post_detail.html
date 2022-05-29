@@ -2,30 +2,31 @@
 {% load social_share %}
 {% block content %}
 
-<div class="jumbotron">
-    <div class="container">
-        <div class="row justify-content-center g-0">
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "placeholder" in post.featured_image.url %}
-                <img class="rounded-pill" src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg"
-                    width="100%">
-                {% else %}
-                <img class="rounded-pill" src=" {{ post.featured_image.url }}" width="100%">
-                {% endif %}
-            </div>
+
+<div class="container">
+    <div class="row justify-content-center g-0">
+        <div class="d-none d-md-block col-md-6 masthead-image">
+            {% if "placeholder" in post.featured_image.url %}
+            <img class="rounded-pill"
+                src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg"
+                width="100%">
+            {% else %}
+            <img class="rounded-pill" src=" {{ post.featured_image.url }}" width="100%">
+            {% endif %}
         </div>
-        <div class="row m-2 g-0 justify-content-md-center">
-            <div class="col-md-auto masthead-text text-center justify-content-md-center">
-                <h1 class="post-title">{{ post.title }}</h1>
-                <p class="post-subtitle">{{ post.author }} // {{ post.created_on }}</p>
-            </div>
+    </div>
+    <div class="row m-2 g-0 justify-content-md-center">
+        <div class="col-md-auto masthead-text text-center justify-content-md-center">
+            <h1 class="post-title">{{ post.title }}</h1>
+            <p class="post-subtitle">{{ post.author }} // {{ post.created_on }}</p>
         </div>
     </div>
 </div>
 
+
 <div class="container">
     <div class="row">
-        <div class="col card mb-4 mt-3 left top" id="card-style">
+        <div class="col card mb-4 mt-3 left top">
             <div class="card-body mb-3">
                 <p class="card-text ">
                     {{ post.content | safe }}

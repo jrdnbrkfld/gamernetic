@@ -57,21 +57,6 @@ body {
     display: inline-block;
 }
 
-/* post cards */
-
-.card-body {
-    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.76);
-    -webkit-box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.76);
-    -moz-box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.76);
-    border-radius: 15px 15px 15px 15px;
-    -webkit-border-radius: 15px 15px 15px 15px;
-    -moz-border-radius: 15px 15px 15px 15px;
-}
-
-#card-style {
-    display: contents;
-}
-
 /* footer */
 
 ul {
