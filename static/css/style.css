@@ -49,6 +49,12 @@ body {
     display: inline;
 }
 
+.twitter {
+    color: crimson;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /* footer */
 
 ul {
