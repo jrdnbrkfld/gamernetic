@@ -63,6 +63,16 @@ body {
     text-align: center;
 }
 
+/* register page */
+
+#sign-up {
+    color: black;
+}
+
+#sign-up:hover {
+    color: white;
+}
+
 /* footer */
 
 ul {
