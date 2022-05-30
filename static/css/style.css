@@ -73,6 +73,19 @@ body {
     color: white;
 }
 
+#button {
+    background-color: crimson;
+    color: black;
+    border-radius: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#button:hover {
+    background-color: black;
+    color: white;
+}
+
 /* footer */
 
 ul {
