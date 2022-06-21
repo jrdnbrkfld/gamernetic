@@ -21,7 +21,7 @@ class PostDetail(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        return render (
+        return render(
             request,
             "post_detail.html",
             {
@@ -52,7 +52,7 @@ class PostDetail(View):
         else:
             comment_form = CommentForm()
 
-        return render (
+        return render(
             request,
             "post_detail.html",
             {
