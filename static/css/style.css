@@ -63,19 +63,6 @@ body {
     text-align: center;
 }
 
-.btn-like {
-    color: crimson;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: black;
-    background: transparent;
-    border: none;
-}
-
 /* register page */
 
 #sign-up {
