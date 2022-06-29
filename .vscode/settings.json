@@ -26,5 +26,8 @@
    "editor.defaultFormatter": "HookyQR.beautify",
    "deno.enable": true,
    "deno.lint": true,
-   "deno.unstable": true
+   "deno.unstable": true,
+   "[css]": {
+      "editor.defaultFormatter": "vscode.css-language-features"
+   }
 }
