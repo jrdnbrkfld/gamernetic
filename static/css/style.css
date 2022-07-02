@@ -117,3 +117,16 @@ a:hover {
 #copyright {
     color: crimson;
 }
+
+/* about us  */
+
+.about-us {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-color: crimson;
+    color: black;
+    
+}
