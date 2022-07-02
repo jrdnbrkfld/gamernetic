@@ -1,11 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic, View
+from django.views.generic import View, CreateView, ListView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
 
 
-class PostList(generic.ListView):
+class PostList(ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
@@ -77,7 +77,3 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-def about(request):
-    return render(request, 'about.html', {})
