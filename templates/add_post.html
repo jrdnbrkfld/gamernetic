@@ -9,10 +9,10 @@
         </div>
     </div>
 
-    <form method="POST">
+    <form class="text-center" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button>Post</button>
+        <button class="btn btn-signup right" id="button">Post</button>
     </form>
 
 {%endblock%}
