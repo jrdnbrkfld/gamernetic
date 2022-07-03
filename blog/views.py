@@ -77,3 +77,9 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class AddPostView(CreateView):
+    model = Post
+    template_name = 'about.html'
+    fields = '__all__'
