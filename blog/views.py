@@ -79,7 +79,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class AddPostView(CreateView):
+class AddPost(CreateView):
     model = Post
-    template_name = 'about.html'
+    template_name = 'add_post.html'
     fields = '__all__'
