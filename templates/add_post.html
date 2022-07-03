@@ -2,13 +2,17 @@
 
 {% block content %}
 
-<header>
     <div class="post-caption mt-4">
         <div class="text-center-caption">
             <h1 class="display-5 fw-bolder text-shadow">Add Your Post</h1>
             <p class="lead text-shadow fw-bold">Tell us about your favourite game</p>
         </div>
     </div>
-</header>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Post</button>
+    </form>
 
 {%endblock%}
