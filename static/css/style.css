@@ -23,7 +23,7 @@ body {
 }
 
 .header-image {
-    height: 25rem;
+    height: 15rem;
     border-radius: 100px;
 }
 
@@ -128,5 +128,20 @@ a:hover {
     width: 100%;
     background-color: crimson;
     color: black;
-    
+
+}
+
+/* media queries */
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    /* changed the properties of the colored image/text within on smaller devices */
+    #main-background {
+        height: 10rem;
+    }
+    .text-center-caption h1 {
+        font-size: 30px;  
+    }
+    .text-center-caption h2 {
+        font-size: 15px;  
+    }
 }
