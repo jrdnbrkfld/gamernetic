@@ -8,7 +8,7 @@
             <p class="lead text-shadow fw-bold">Tell us about your favourite game</p>
         </div>
     </div>
-
+    
     <form class="text-center" action="." method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
