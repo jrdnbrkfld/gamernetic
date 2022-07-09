@@ -60,6 +60,7 @@
                         {% endwith %}
                     </div>
                     {% post_to_twitter "New blog post: Check it out!" object_or_url "<p class='twitter'>Share to Twitter</p>" %}
+                    <small><p><a href="{% url 'update_post' post.slug %}">Edit</a></p></small>
                 </div>
             </div>
         </div>
