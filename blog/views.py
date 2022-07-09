@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views.generic import View, CreateView, ListView
+from django.views.generic import View, CreateView, ListView, UpdateView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm
@@ -83,3 +83,10 @@ class AddPost(CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
+
+
+class UpdatePostView(UpdateView):
+    model = Post
+    template_name = 'update_post.html'
+    fields = ('title', 'excerpt', 'slug', 'featured_image',
+              'content', 'author', 'status')
