@@ -7,14 +7,14 @@
 <header>
     <div class="container-fluid" id="image">
         <div class="row px-4 text-center">
-            <img class="img-fluid header-image"
+            <img class="img-fluid header-image" id="main-background"
                 src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg"
                 alt="blue/pink background image">
             <div class="col-lg-6 mx-auto">
                 <div class="caption">
                     <div class="text-center-caption">
-                        <h1 class="display-5 fw-bolder text-shadow">GAMERNETIC</h1>
-                        <h2 class="lead text-shadow fw-bold">For gamers || By gamers</h2>
+                        <h1 class="post-title fw-bolder text-uppercase">GAMERNETIC</h1>
+                        <h6 class="post-subtitle fw-bold">For gamers || By gamers</h6>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,8 @@
                             </a>
                             <hr />
                             <p class="card-text text-muted h6 rounded">{{ post.created_on}} <i class="far fa-heart"></i>
-                                {{ post.number_of_likes }}</p>
+                                {{ post.number_of_likes }}
+                            </p>
                         </div>
                     </div>
                 </div>

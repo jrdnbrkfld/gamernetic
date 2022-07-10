@@ -8,23 +8,25 @@
 <header>
     <div class="container-fluid" id="image">
         <div class="row px-4 text-center">
-            <img class="img-fluid header-image"
+            <img class="img-fluid header-image" id="main-background"
                 src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg"
                 alt="blue/pink background image">
             <div class="col-lg-6 mx-auto">
                 <div class="caption">
                     <div class="text-center-caption">
                         <h1 class="post-title fw-bolder text-uppercase">{% trans "Sign Up" %}</h1>
-                            <p class="post-subtitle fw-bold">{% blocktrans %}Welcome to Gamernetic. Do you already have
-                                an account? Then
-                                please <a class="link text-decoration-underline" id="sign-up" href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}
-                            </p>
+                        <h6 class="post-subtitle fw-bold">{% blocktrans %}Welcome to Gamernetic. Do you already have
+                            an account? Then
+                            please <a class="link text-decoration-underline" id="sign-up" href="{{ login_url }}">sign
+                                in</a> instead.{% endblocktrans %}
+                        </h6>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
 <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
         <form class="signup text-center" id="signup_form" method="post" action="{% url 'account_signup' %}">

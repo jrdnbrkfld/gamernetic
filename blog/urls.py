@@ -1,10 +1,12 @@
-from . import views
+from .views import AddPost, PostList, PostDetail, PostLike, UpdatePostView, DeletePostView
 from django.urls import path
 
 
 urlpatterns = [
-    path('', views.PostList.as_view(), name='home'),
-    path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-    path('like/<slug:slug>/', views.PostLike.as_view(), name='post_like'),
-    path('about.html', views.about, name="about"),
+    path('', PostList.as_view(), name='home'),
+    path('like/<slug:slug>/', PostLike.as_view(), name='post_like'),
+    path('create/', AddPost.as_view(), name='create_post'),
+    path('edit/<slug:slug>/', UpdatePostView.as_view(), name='update_post'),
+    path('<slug:slug>/', PostDetail.as_view(), name='post_detail'),
+    path('<slug:slug>/delete/', DeletePostView.as_view(), name='delete'),
 ]
