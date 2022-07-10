@@ -60,11 +60,13 @@
                         {% endwith %}
                     </div>
                     {% post_to_twitter "New blog post: Check it out!" object_or_url "<p class='twitter'>Share to Twitter</p>" %}
-                    <small>
-                        <p>
-                            <a href="{% url 'update_post' post.slug %}">Edit</a> // <a href="{% url 'delete' post.slug %}">Delete</a>
-                        </p>
-                    </small>
+                    {% if user.is_authenticated %}
+                        <small>
+                            <p>
+                                <a href="{% url 'update_post' post.slug %}">Edit</a> // <a href="{% url 'delete' post.slug %}">Delete</a>
+                            </p>
+                        </small>
+                    {% endif %}
                 </div>
             </div>
         </div>
