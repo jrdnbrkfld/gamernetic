@@ -4,7 +4,7 @@ body {
     color: black;
 }
 
-/* navigation links */
+/* navbar */
 
 .nav-active:hover {
     color: crimson;
@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-/* posts */
+/* posts on home page view */
 
 .image-container {
     position: relative;
@@ -76,7 +76,7 @@ body {
     border: none;
 }
 
-/* register page */
+/* account register page */
 
 #sign-up {
     color: black;
