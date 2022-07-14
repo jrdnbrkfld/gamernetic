@@ -61,7 +61,6 @@
                         {% endwith %}
                     </div>
                     {% post_to_twitter "New blog post: Check it out!" object_or_url "<p class='twitter'>Share to Twitter</p>" %}
-                    {% if user.is_authenticated %}
                     {% if user.id == post.author.id %}
                     <small>
                         <p>
@@ -69,7 +68,6 @@
                                 href="{% url 'delete' post.slug %}">Delete</a>
                         </p>
                     </small>
-                    {% endif %}
                     {% endif %}
                 </div>
             </div>
