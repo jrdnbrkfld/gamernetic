@@ -12,7 +12,7 @@ class PostForm (forms.ModelForm):
     class Meta:
         model = Post
         fields = ('title', 'excerpt', 'slug', 'featured_image',
-                  'content', 'author', 'status')
+                  'content', 'author')
 
         widgets = {
             'title': forms.TextInput(attrs={'placeholder':
