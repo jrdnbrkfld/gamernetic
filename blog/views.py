@@ -96,11 +96,3 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
-
-
-class AboutUsView(View):
-    model = Post
-    template_name = 'about-us.html'
-
-    def get(self, request):
-        return render(request, "about_us.html")
