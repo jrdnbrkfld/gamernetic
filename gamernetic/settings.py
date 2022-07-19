@@ -49,12 +49,12 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+    'ckeditor',
     'cloudinary',
     'django_summernote',
     'django_social_share',
     'crispy_forms',
     'blog',
-    'ckeditor',
 ]
 
 MIDDLEWARE = [
