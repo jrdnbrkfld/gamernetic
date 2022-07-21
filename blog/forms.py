@@ -1,4 +1,5 @@
-from .models import Comment, Post
+from .models import Comment, Post, User
+from django.contrib.auth.forms import UserChangeForm
 from django import forms
 
 
@@ -24,4 +25,18 @@ class PostForm (forms.ModelForm):
             'content': forms.Textarea(attrs={'placeholder':
                                              '<p>Wrap your content in these P tags to create a paragraph</p>\n\n<b>Wrap your words in these B tags to make them bold</b>'}),
             'author': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'user', 'type': 'hidden'}),
+        }
+
+
+class EditProfileForm(UserChangeForm):
+    password = None
+
+    class Meta:
+        model = User
+        fields = ["username", "email", "first_name", "last_name"]
+        widgets = {
+            "username": forms.TextInput(attrs={"class": "form-control"}),
+            "email": forms.TextInput(attrs={"class": "form-control"}),
+            "first_name": forms.TextInput(attrs={"class": "form-control"}),
+            "last_name": forms.TextInput(attrs={"class": "form-control"}),
         }
