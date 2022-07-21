@@ -93,6 +93,22 @@ TEMPLATES = [
     },
 ]
 
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': [
+            ['-', 'Bold', 'Italic', 'Underline', 'Undo', 'Redo',
+             '-', 'Link', 'Unlink', 'Anchor',
+             '-', 'NumberedList', 'BulletedList', 'Outdent', 'Indent', 'Blockquote',
+             '-', 'Styles', 'Format',
+             '-', 'Image',
+             '-', 'Source',
+             '-', 'Maximize',
+             ],
+        ],
+        'width': 'auto',
+    },
+}
+
 WSGI_APPLICATION = 'gamernetic.wsgi.application'
 
 
