@@ -31,21 +31,21 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top rounded"
-                                    src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="author fw-bold" id="author">Author: {{ post.author }}</p>
-                                </div>
+                                <a href="{% url 'post_detail' post.slug %}" class="text-dark text-decoration-none" id="post-link">
+                                    {% if "placeholder" in post.featured_image.url %}
+                                    <img class="card-img-top rounded"
+                                        src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg">
+                                    {% else %}
+                                    <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                    {% endif %}
+                                    <div class="image-flash">
+                                        <p class="author fw-bold" id="author">Author: {{ post.author }}</p>
+                                    </div>
                             </div>
-                            <a href="{% url 'post_detail' post.slug %}" class="link-dark text-decoration-none">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
-                            </a>
-                            <hr />
+                                    <h2 class="card-title">{{ post.title }}</h2>
+                                    <p class="card-text">{{ post.excerpt }}</p>
+                                </a>
+                            <hr>
                             <p class="card-text text-muted h6 rounded">{{ post.created_on}} <i class="far fa-heart"></i>
                                 {{ post.number_of_likes }}
                             </p>
