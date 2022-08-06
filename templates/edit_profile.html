@@ -31,7 +31,7 @@
         <div class="m-8 text-center">
             {{ user.profile.bio }}
         </div>
-        <form class="signup text-center" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        <form class="signup text-center" id="signup_form" method="post" action="{% url 'edit_profile' %}">
             {% csrf_token %}
             {{ form.as_p }}
             <button class="btn btn-signup right" id="button" type="submit">{% trans "Edit Profile" %} &raquo;</button>
