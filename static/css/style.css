@@ -48,6 +48,7 @@ body {
 #author {
     text-transform: uppercase;
     display: inline;
+    color: black;
 }
 
 .twitter {
