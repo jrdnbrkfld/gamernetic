@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views.generic import View, CreateView, ListView, UpdateView, DeleteView
+from django.views.generic import (
+    View, CreateView, ListView, UpdateView, DeleteView
+)
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import UserChangeForm
 from django.urls import reverse_lazy
@@ -101,7 +103,9 @@ class DeletePostView(DeleteView):
 
 class UserEditView(UpdateView):
     form_class = EditProfileForm
-    template_name = '/workspace/pp4-gamernetic/templates/account/edit_profile.html'
+    template_name = (
+        '/workspace/pp4-gamernetic/templates/account/edit_profile.html'
+        )
     success_url = reverse_lazy('home')
 
     def get_object(self):
