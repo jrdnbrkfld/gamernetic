@@ -47,14 +47,16 @@
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart custom-tooltip" data-toggle="tooltip" title="You must create an account or log in to like a post."></i></span>
+                            <span class="text-secondary"><i class="far fa-heart custom-tooltip" data-toggle="tooltip"
+                                    title="You must create an account or log in to like a post."></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ post.number_of_likes }}</span>
                         </strong>
                         {% with comments.count as total_comments %}
                         <strong>
                             <div class="text-secondary d-inline">
-                                <i class="far fa-comments m-1 custom-tooltip" data-toggle="tooltip" title="You must create an account or log in to comment."></i>
+                                <i class="far fa-comments m-1 custom-tooltip" data-toggle="tooltip"
+                                    title="You must create an account or log in to comment."></i>
                                 {{ total_comments }}
                             </div>
                         </strong>
@@ -79,42 +81,40 @@
         </div>
     </div>
     <div class="row">
-        <div class="row">
-            <div class="col-md-8 card mb-4  mt-3 ">
-                <h3>Comments:</h3>
-                <div class="card-body">
-                    {% for comment in comments %}
-                    <div class="comments" style="padding: 10px;">
-                        <p class="font-weight-bold">
-                            {{ comment.name }}
-                            <span class=" text-muted font-weight-normal">
-                                {{ comment.created_on }}
-                            </span> wrote:
-                        </p>
-                        {{ comment.body | linebreaks }}
-                        <hr>
-                    </div>
-                    {% endfor %}
+        <div class="col-md-8 card mb-4  mt-3 ">
+            <h3>Comments:</h3>
+            <div class="card-body">
+                {% for comment in comments %}
+                <div class="comments" style="padding: 10px;">
+                    <p class="font-weight-bold">
+                        {{ comment.name }}
+                        <span class=" text-muted font-weight-normal">
+                            {{ comment.created_on }}
+                        </span> wrote:
+                    </p>
+                    {{ comment.body | linebreaks }}
+                    <hr>
                 </div>
+                {% endfor %}
             </div>
-            <div class="col-md-4 card mb-4  mt-3 ">
-                <div class="card-body">
-                    {% if commented %}
-                    <div class="alert alert-success" role="alert">
-                        Your comment is awaiting approval
-                    </div>
-                    {% else %}
-                    {% if user.is_authenticated %}
-                    <h3>Leave a comment:</h3>
-                    <p>Posting as: {{ user.username }}</p>
-                    <form method="post" style="margin-top: 1.3em;">
-                        {{ comment_form | crispy }}
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-signup right mt-3" id="button">Submit &raquo;</button>
-                    </form>
-                    {% endif %}
-                    {% endif %}
+        </div>
+        <div class="col-md-4 card mb-4  mt-3 ">
+            <div class="card-body">
+                {% if commented %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting approval
                 </div>
+                {% else %}
+                {% if user.is_authenticated %}
+                <h3>Leave a comment:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup right mt-3" id="button">Submit &raquo;</button>
+                </form>
+                {% endif %}
+                {% endif %}
             </div>
         </div>
     </div>
