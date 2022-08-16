@@ -47,14 +47,14 @@
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <span class="text-secondary"><i class="far fa-heart custom-tooltip" data-toggle="tooltip" title="You must create an account or log in to like a post."></i></span>
                             {% endif %}
                             <span class="text-secondary">{{ post.number_of_likes }}</span>
                         </strong>
                         {% with comments.count as total_comments %}
                         <strong>
                             <div class="text-secondary d-inline">
-                                <i class="far fa-comments m-1"></i>
+                                <i class="far fa-comments m-1 custom-tooltip" data-toggle="tooltip" title="You must create an account or log in to comment."></i>
                                 {{ total_comments }}
                             </div>
                         </strong>
