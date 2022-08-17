@@ -82,7 +82,9 @@
     </div>
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
+            <div style="padding: 10px;">
+                <h3 class="post-title fw-bolder m-1 text-uppercase">Comments:</h3>
+            </div>
             <div class="card-body">
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
@@ -113,6 +115,10 @@
                     {% csrf_token %}
                     <button type="submit" class="btn btn-signup right mt-3" id="button">Submit &raquo;</button>
                 </form>
+                {% else %}
+                <h6>To leave a comment or like a post, please log in. If you have not created an account yet, then <a
+                        class="link text-decoration-underline" id="comment-signup" href="{{ signup_url }}">sign up</a>.
+                </h6>
                 {% endif %}
                 {% endif %}
             </div>
