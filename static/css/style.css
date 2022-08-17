@@ -82,6 +82,14 @@ body {
     color: crimson;
 }
 
+#comment-signup {
+    color: crimson
+}
+
+#comment-signup:hover {
+    color: black
+}
+
 /* account register page */
 
 #sign-up {
