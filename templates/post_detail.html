@@ -117,7 +117,7 @@
                 </form>
                 {% else %}
                 <h6>To leave a comment or like a post, please log in. If you have not created an account yet, then <a
-                        class="link text-decoration-underline" id="comment-signup" href="{{ signup_url }}">sign up</a>.
+                        class="link text-decoration-underline" id="comment-signup" href="{% url 'account_signup' %}">sign up</a>.
                 </h6>
                 {% endif %}
                 {% endif %}
