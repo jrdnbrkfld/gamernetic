@@ -1,4 +1,11 @@
-![gamernetic-logo-trimmed](https://user-images.githubusercontent.com/98277650/170797126-fd4d439a-643c-4f3c-b759-d043783d421c.jpg)
+# Gamernetic
+
+This website was created to complete the fourth Milestone Project for Code Insitute's Full Stack Software Developer course. I built this from the ground up using knowledge I gained from the previous modules. The objective of this project is to showcase my ability to create a true Full Stack application using the Django framework. The full list of technologies used can be found in the technologies section further down.
+
+Users of this website are able to create, read, update and delete posts regarding any subject in the gaming industry.
+
+You can find the link to the live website right [here](https://gamernetic.herokuapp.com/).
+Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
 <details>
 <summary>Testing</summary>
