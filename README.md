@@ -18,6 +18,18 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 ## User Experience
 ### User Stories
+#### Site User Goals
+* As a Site User I can view a list of posts so that I can select one to read.
+* As a Site User I can click on a post so that I can read the full article.
+* As a Site User I can view the number of likes on each post so that I can see which is the most popular or viral.
+* As a Site User I can view comments on an individual post so that I can read the conversation.
+* As a Site User I can register an account so that I can comment on and like posts.
+* As a Site User I can leave comments on a post so that I can be involved in the conversation.
+* As a Site User I can like or unlike a post so that I can interact with the content.
+
+#### Admin User Goals
+* As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
+* As a Site Admin I can create draft posts so that I can finish writing the content later.
 
 ## Design
 
