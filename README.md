@@ -14,6 +14,7 @@ Users of this website are able to create, read, update and delete posts regardin
 You can find the link to the live website right [here](https://gamernetic.herokuapp.com/).
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
+![image](https://user-images.githubusercontent.com/98277650/187801886-aed9a86e-2f82-4f94-bddc-f9f509b24c6e.png)
 
 
 ## User Experience
@@ -26,10 +27,18 @@ Please note: To open any links in this document in a new browser tab, please pre
 * As a Site User I can register an account so that I can comment on and like posts.
 * As a Site User I can leave comments on a post so that I can be involved in the conversation.
 * As a Site User I can like or unlike a post so that I can interact with the content.
+* As a Site User I can navigate around the site so that I can choose the things I want to read.
+* As a Site User I can create my own post to add to the blog.
+* As a Site User I can update/edit my own post to add to the blog.
+* As a Site User I can edit/delete my own post from the blog.
+* As a Site User I can view and edit my profile so that I can customise how I appear on the website..
+
 
 #### Admin User Goals
 * As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
 * As a Site Admin I can create draft posts so that I can finish writing the content later.
+* As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+
 
 ## Design
 
