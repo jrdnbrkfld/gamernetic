@@ -3,6 +3,15 @@
 * [User Experience](#user-experience)
   * [User Stories](#user-stories) 
   * [Design](#design)
+* [Features](#features)
+  * [Existing Features](#existing-features)
+  * [Features Left To Implement](#features-left-to-implement)
+* [Technologies](#technologies)
+* [Testing](#testing)
+  * [Validator Testing](#validator-testing)
+  * [Issues And Resolutions](#issues-and-resolutions)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
 # Milestone Project 4 - Gamernetic
 ## Purpose
@@ -15,7 +24,6 @@ You can find the link to the live website right [here](https://gamernetic.heroku
 Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
 
 ![image](https://user-images.githubusercontent.com/98277650/187801886-aed9a86e-2f82-4f94-bddc-f9f509b24c6e.png)
-
 
 ## User Experience
 ### User Stories
@@ -33,24 +41,103 @@ Please note: To open any links in this document in a new browser tab, please pre
 * As a Site User I can edit/delete my own post from the blog.
 * As a Site User I can view and edit my profile so that I can customise how I appear on the website..
 
-
 #### Admin User Goals
 * As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
 * As a Site Admin I can create draft posts so that I can finish writing the content later.
 * As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
 
-
 ## Design
 
-
-<details>
-<summary>Testing</summary>
-
-Did a bit of practice with branches
-</details>
 <details>
 <summary>Wireframes</summary>
 
 ![index-desktop-wireframe](https://user-images.githubusercontent.com/98277650/177381328-736c7454-6a29-4ba5-8a5b-94af1189cc14.png)
 ![index-mobile-wireframe](https://user-images.githubusercontent.com/98277650/177381382-971e05ca-ca33-46c5-9997-61c2210c2a18.png)
 </details>
+
+## Features
+
+### Existing Features
+
+### Features Left to Implement
+
+## Technologies
+
+## Testing
+
+## Validator Testing
+
+### Code Validation
+
+To ensure all code for Gamernetic was correct, validation through various validators was performed. The results are listed below.
+
+- ### HTML Validation
+
+  All HTML code was checked with the [W3C Markup Validation Service](https://validator.w3.org/).
+
+   <details>
+   <summary>Home Page</summary>
+
+   ![image](https://user-images.githubusercontent.com/98277650/187966508-55661019-a2bf-4dd3-854a-0ccdb0f3deb5.png)
+
+   </details>
+   <details>
+   <summary>Post Detail</summary>
+
+   ![image](https://user-images.githubusercontent.com/98277650/187970183-669819b5-5aa2-4d9c-9f3d-9942281ebacb.png)
+
+   </details>
+   <details>
+   <summary>Sign Up</summary>
+
+   ![image](https://user-images.githubusercontent.com/98277650/187970451-f03bd49b-3d62-4076-9a40-530f141173f1.png)
+
+   </details>
+   <details>
+   <summary>Log In</summary>
+
+   ![image](https://user-images.githubusercontent.com/98277650/187970742-d2c2e134-b7e6-42fd-af15-919449424abd.png)
+
+   </details>
+   <details>
+   <summary>Add Post</summary>
+
+   One error returned. As seen in the code below, I have had to use {{ form.as_p }} to get the rich text editor to function correctly. As of right now I am unsure of a solution.
+
+   ![image](https://user-images.githubusercontent.com/98277650/187972452-e1a36e47-c8ec-4367-9b6a-595ed69114de.png)
+
+
+   ![image](https://user-images.githubusercontent.com/98277650/187972057-046a277d-71b6-4eac-8f6a-1754f95f633f.png)
+
+   </details>
+   <details>
+   <summary>Edit Profile</summary>
+
+   I was unable to validate this page due to the page only being accessible to a user who is logged in and able to edit their profile.
+
+   ![image](https://user-images.githubusercontent.com/98277650/187972974-6047d7bb-40ea-4596-9c23-f18c3a808ccc.png)
+
+   </details>
+   <details>
+   <summary>Log Out</summary>
+
+   ![image](https://user-images.githubusercontent.com/98277650/187973621-a01a08f4-4271-4ef0-826e-7f3eb836001f.png)
+
+   </details>
+   
+- ### CSS Validation
+
+  All CSS code was checked with the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+
+   <details>
+   <summary>CSS Results</summary>
+
+   ![image](https://user-images.githubusercontent.com/98277650/187975424-1d87fd98-b930-4009-874a-adbb4210bd86.png)
+
+   </details>
+
+## Issues and Resolutions
+
+## Deployment
+
+## Credits
