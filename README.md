@@ -135,6 +135,47 @@ To ensure all code for Gamernetic was correct, validation through various valida
    ![image](https://user-images.githubusercontent.com/98277650/187975424-1d87fd98-b930-4009-874a-adbb4210bd86.png)
 
    </details>
+   
+- ### Python Validation
+
+  All Python code was checked with the [PEP8 Online Service](http://pep8online.com/).
+
+  <details>
+  <summary>admin.py</summary>
+
+  ![image](https://user-images.githubusercontent.com/98277650/188003211-31fd93b3-c8bb-4e13-ab52-b9ef5f929f03.png)
+
+  </details>
+  <details>
+  <summary>apps.py</summary>
+
+  ![image](https://user-images.githubusercontent.com/98277650/188003527-aa13b4d9-f627-474e-a6d2-8aafae96a2f9.png)
+
+  </details>
+  <details>
+  <summary>forms.py</summary>
+
+  ![image](https://user-images.githubusercontent.com/98277650/188004880-1f45b1fa-234b-42d9-9b09-01a9201fb825.png)
+
+  </details>
+  <details>
+  <summary>models.py</summary>
+
+  ![image](https://user-images.githubusercontent.com/98277650/188005177-1c8a8ed1-2d8a-4de6-aab0-e5c2b07e8efc.png)
+
+  </details>
+  <details>
+  <summary>urls.py</summary>
+
+  ![image](https://user-images.githubusercontent.com/98277650/188005370-ba06262e-cb7e-4d7f-b5a2-443bd9b1282a.png)
+
+  </details>
+  <details>
+  <summary>views.py</summary>
+
+  ![image](https://user-images.githubusercontent.com/98277650/188005494-cc4cd2bd-4cd8-446a-a2a2-0681761026f8.png)
+
+  </details>
 
 ## Issues and Resolutions
 
