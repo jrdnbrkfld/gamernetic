@@ -45,7 +45,7 @@ body {
     background-color: #ff0030;
 }
 
-#author {
+.author {
     text-transform: uppercase;
     display: inline;
     color: black;
@@ -89,6 +89,10 @@ body {
 
 #comment-signup:hover {
     color: black
+}
+
+.post-image {
+    width: 100%;
 }
 
 /* account register page */
