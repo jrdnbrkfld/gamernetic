@@ -8,11 +8,10 @@
     <div class="row justify-content-center g-0">
         <div class="col-md-7 masthead-image">
             {% if "placeholder" in post.featured_image.url %}
-            <img class="rounded-pill"
-                src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1662036640/placeholder_vnzsfr_smds1a.jpg"
-                width="100%">
+            <img class="rounded-pill post-image"
+                src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1662036640/placeholder_vnzsfr_smds1a.jpg">
             {% else %}
-            <img class="rounded-pill" alt="Authors chosen photo" src=" {{ post.featured_image.url }}" width="100%">
+            <img class="rounded-pill post-image" alt="Authors chosen photo" src=" {{ post.featured_image.url }}">
             {% endif %}
         </div>
     </div>
