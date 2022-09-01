@@ -22,8 +22,9 @@ body {
 }
 
 .header-image {
-    height: 15rem;
+    height: 10rem;
     border-radius: 100px;
+    object-fit: cover;
 }
 
 #image {
