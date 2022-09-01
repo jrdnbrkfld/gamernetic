@@ -6,7 +6,7 @@ body {
 /* navbar */
 
 .nav-active:hover {
-    color: crimson;
+    color: #ff0030;
 }
 
 /* header image */
@@ -17,7 +17,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    background-color: crimson;
+    background-color: #ff0030;
     color: black;
 }
 
@@ -42,7 +42,7 @@ body {
     position: absolute;
     bottom: 0%;
     left: 0%;
-    background-color: crimson;
+    background-color: #ff0030;
 }
 
 #author {
@@ -52,20 +52,20 @@ body {
 }
 
 .twitter {
-    color: crimson;
+    color: #ff0030;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
 }
 
 .post-caption {
-    background-color: crimson;
+    background-color: #ff0030;
     color: black;
     text-align: center;
 }
 
 .btn-like {
-    color: crimson;
+    color: #ff0030;
     border: none;
     background: transparent;
 }
@@ -80,11 +80,11 @@ body {
 /* post details */
 
 .custom-tooltip:hover {
-    color: crimson;
+    color: #ff0030;
 }
 
 #comment-signup {
-    color: crimson
+    color: #ff0030
 }
 
 #comment-signup:hover {
@@ -102,7 +102,7 @@ body {
 }
 
 #button {
-    background-color: crimson;
+    background-color: #ff0030;
     color: black;
     border-radius: 100px;
     font-weight: bold;
@@ -126,11 +126,11 @@ li>a {
 }
 
 a:hover {
-    color: crimson;
+    color: #ff0030;
 }
 
 #copyright {
-    color: crimson;
+    color: #ff0030;
 }
 
 /* media queries */
