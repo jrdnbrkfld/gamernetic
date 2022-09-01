@@ -33,10 +33,10 @@
                             <div class="image-container">
                                 <a href="{% url 'post_detail' post.slug %}" class="text-dark text-decoration-none" id="post-link">
                                     {% if "placeholder" in post.featured_image.url %}
-                                    <img class="card-img-top rounded"
+                                    <img class="card-img-top rounded" alt="Authors chosen image to represent the post"
                                         src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1653761818/header-image_q71tuy.jpg">
                                     {% else %}
-                                    <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                    <img class="card-img-top" alt="Gamernetics placeholder image" src=" {{ post.featured_image.url }}">
                                     {% endif %}
                                     <div class="image-flash">
                                         <p class="author fw-bold" id="author">Author: {{ post.author }}</p>
