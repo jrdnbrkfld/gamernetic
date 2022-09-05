@@ -3,10 +3,11 @@ from django.views.generic import (
     View, CreateView, ListView, UpdateView, DeleteView
 )
 from django.http import HttpResponseRedirect
-from django.contrib.auth.forms import UserChangeForm
+from django.contrib.auth.forms import UserChangeForm, PasswordChangeForm
+from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
 from .models import Post
-from .forms import CommentForm, PostForm, EditProfileForm
+from .forms import CommentForm, PostForm, EditProfileForm, PasswordChangingForm
 
 
 class PostList(ListView):
@@ -109,3 +110,11 @@ class UserEditView(UpdateView):
 
     def get_object(self):
         return self.request.user
+
+
+class PasswordsChangeView(PasswordChangeView):
+    form_class = PasswordChangingForm
+    success_url = reverse_lazy('password_success')
+
+def password_success(request):
+    return render(request, 'password_success.html', {})
