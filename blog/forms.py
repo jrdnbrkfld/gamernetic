@@ -33,11 +33,16 @@ class PostForm (forms.ModelForm):
 
 class EditProfileForm(UserChangeForm):
     password = None
+    username = forms.CharField(max_length=100)
+    email = forms.CharField(max_length=100)
+    first_name = forms.CharField(max_length=100)
+    last_name = forms.CharField(max_length=100)
 
     class Meta:
         model = User
-        fields = ["email", "first_name", "last_name"]
+        fields = ["username", "email", "first_name", "last_name"]
         widgets = {
+            "username": forms.TextInput(attrs={"class": "form-control"}),
             "email": forms.TextInput(attrs={"class": "form-control"}),
             "first_name": forms.TextInput(attrs={"class": "form-control"}),
             "last_name": forms.TextInput(attrs={"class": "form-control"}),
