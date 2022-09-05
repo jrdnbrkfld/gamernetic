@@ -1,5 +1,5 @@
 from .models import Comment, Post, User
-from django.contrib.auth.forms import UserChangeForm
+from django.contrib.auth.forms import UserChangeForm, PasswordChangeForm
 from django import forms
 
 
@@ -32,7 +32,6 @@ class PostForm (forms.ModelForm):
 
 
 class EditProfileForm(UserChangeForm):
-    password = None
     username = forms.CharField(max_length=100)
     email = forms.CharField(max_length=100)
     first_name = forms.CharField(max_length=100)
@@ -47,3 +46,13 @@ class EditProfileForm(UserChangeForm):
             "first_name": forms.TextInput(attrs={"class": "form-control"}),
             "last_name": forms.TextInput(attrs={"class": "form-control"}),
         }
+
+
+class PasswordChangingForm(PasswordChangeForm):
+    old_password = forms.CharField(max_length=100, label="Old Password", widget=forms.PasswordInput())
+    new_password1 = forms.CharField(max_length=100, label="New Password", widget=forms.PasswordInput())
+    new_password2 = forms.CharField(max_length=100, label="Confirm Password", widget=forms.PasswordInput())
+
+    class Meta:
+        model = User
+        fields = ["old_password", "new_password1", "new_password2"]
