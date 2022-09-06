@@ -113,8 +113,11 @@ class UserEditView(UpdateView):
 
 
 class PasswordsChangeView(PasswordChangeView):
+    model = Post
+    template_name = 'change_password.html'
     form_class = PasswordChangingForm
     success_url = reverse_lazy('password_success')
+
 
 def password_success(request):
     return render(request, 'password_success.html', {})
