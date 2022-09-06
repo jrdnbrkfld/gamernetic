@@ -118,6 +118,16 @@ body {
     color: white;
 }
 
+/* profile editing */
+
+#change_password {
+    color: black;
+}
+
+#change_password:hover {
+    color: #ff0030;
+}
+
 /* footer */
 
 ul {
@@ -140,14 +150,17 @@ a:hover {
 /* media queries */
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+
     /* changed the properties of the colored image/text within on smaller devices */
     #main-background {
         height: 10rem;
     }
+
     .text-center-caption h1 {
-        font-size: 30px;  
+        font-size: 30px;
     }
+
     .text-center-caption h6 {
-        font-size: 15px;  
+        font-size: 15px;
     }
 }
