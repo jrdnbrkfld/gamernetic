@@ -8,8 +8,7 @@ from . import views
 urlpatterns = [
     path('', PostList.as_view(), name='home'),
     path('edit_profile/', UserEditView.as_view(), name='edit_profile'),
-    # path('password/', auth_views.PasswordChangeView.as_view(template_name='change_password.html')),
-    path('password/', PasswordsChangeView.as_view(template_name='change_password.html')),
+    path('password/', PasswordsChangeView.as_view(), name='change_password'),
     path('password_success', views.password_success, name='password_success'),
     path('like/<slug:slug>/', PostLike.as_view(), name='post_like'),
     path('create/', AddPost.as_view(), name='create_post'),
