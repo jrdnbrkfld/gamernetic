@@ -50,6 +50,17 @@ Please note: To open any links in this document in a new browser tab, please pre
 ## Features
 
 ### Existing Features
+<details><summary>Home Page</summary>
+ 
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188748847-5563753e-e0d7-4d44-a1b1-7996547ff706.png)
+ 
+</details>
+
 <details><summary>Navigation Bar</summary>
  
 Featured at the top of all pages is the nav bar, holding the Gamernetic logo and all links to the home page, register page and log in page.
@@ -60,8 +71,97 @@ As a First Time User, I can register an account to gain full access to the websi
 As a Frequent Visitor I can log in to gain access to my account.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188245525-36fe6adc-d3e7-45dc-80f7-5130991190b2.png)
+
+I have also set up the Nav Bar to be viewed on smaller screen sizes, with the help of Bootstraps .navbar-toggler class.
+
+![image](https://user-images.githubusercontent.com/98277650/188749607-8643846a-77b6-4970-bdb8-edab95b1e5f2.png)
+
+</details> 
+
+<details><summary>Footer</summary>
  
-</details>   
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188749256-c830d891-527d-4d64-ab4f-2c2d7c1ab900.png)
+ 
+</details>
+
+<details><summary>Post Detail</summary>
+ 
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188749721-9345eef1-0846-4a4d-b8be-72f458072e50.png)
+ 
+</details>
+
+<details><summary>Post Comments</summary>
+ 
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188749804-bde80368-9193-471d-8a64-3e419e1adebe.png)
+
+![image](https://user-images.githubusercontent.com/98277650/188749923-dfdab3c8-331c-47c1-99a0-e4f917a0f4af.png)
+ 
+</details>
+
+<details><summary>Add Post</summary>
+ 
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188750032-7fd19423-9acf-4851-80fb-bb2af0e0365b.png)
+
+</details>
+
+<details><summary>Edit/Delete Post</summary>
+ 
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188750267-9fe41ace-f585-42a9-bafa-7c69fdb28e04.png)
+
+![image](https://user-images.githubusercontent.com/98277650/188750296-f19bc082-072f-4a46-8a2a-2f2c240afc16.png)
+
+![image](https://user-images.githubusercontent.com/98277650/188750325-c4fde938-07be-45cd-b2bd-5104da48feb0.png)
+
+</details>
+
+<details><summary>Edit Profile</summary>
+ 
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188750457-33d23728-d41b-4f35-b28f-2f82f222a4ee.png)
+
+</details>
+
+<details><summary>Change Password</summary>
+ 
+Featured.
+The purpose of this is to fulfill the following user stories:
+```
+User Story
+```
+![image](https://user-images.githubusercontent.com/98277650/188750520-6c1ae6aa-0d5e-40cf-8503-e93681af33c1.png)
+
+![image](https://user-images.githubusercontent.com/98277650/188750658-7ab3a60d-910c-48ab-b3bd-b952d783273c.png)
+
+</details>
 
 ### Features Left to Implement
 
