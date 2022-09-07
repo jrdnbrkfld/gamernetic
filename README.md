@@ -25,16 +25,18 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 ![image](https://user-images.githubusercontent.com/98277650/188247357-c4c72544-90cd-4264-844c-f7e88695a8ab.png)
 
-## User Experience
-### User Stories
-#### First Time User Goals
+***
+
+# User Experience
+## User Stories
+### First Time User Goals
 * As a First Time User, I clearly understand the main objective of the website.
 * As a First Time User, I can easily navigate through the website.
 * As a First Time User, I can register an account to gain full access to the website.
 * As a First Time User, I can view more from the creator of the website via their social media accounts.
 * As a First Time User, I can choose a post I would like to inspect further.
 
-#### Frequent User Goals
+### Frequent User Goals
 * As a Frequent User, I can log in to gain access to my account.
 * As a Frequent User, I can create my own blog post and post it on the website.
 * As a Frequent User, I can edit or delete my own posts.
@@ -44,11 +46,11 @@ Please note: To open any links in this document in a new browser tab, please pre
 * As a Frequent User, I can change aspects of my personal account details.
 * As a Frequent User, I can change my password incase their is a security risk.
 
-#### Admin User Goals
+### Admin User Goals
 * As an Admin, I can create, read, update and delete posts so that I can manage my blog content.
 * As an Admin, I can create draft posts so that I can finish writing the content later.
 * As an Admin, I can approve or disapprove comments so that I can filter out objectionable comments.
-
+***
 ## Design
 
 <details>
@@ -58,9 +60,28 @@ Please note: To open any links in this document in a new browser tab, please pre
 ![index-mobile-wireframe](https://user-images.githubusercontent.com/98277650/177381382-971e05ca-ca33-46c5-9997-61c2210c2a18.png)
 </details>
 
-## Features
+<details><summary>Imagery</summary>
+The images you are greeted to when entering the website are of varying style. Most of the photos you will see are uploaded by the user, but the header image will always be as shown below. This is also used as the placeholder image when a user chooses to not upload a photo to their post.
 
-### Existing Features
+![Imagery](static/images/readme/readme-placeholder.jpg)
+</details>
+
+<details><summary>Color Scheme</summary>
+Three colors are used in this website, these being #000000, #FFFFFF and #FF0030. The background, text and foreground colors have a sufficient contrast ratio to aid with accessibility.
+
+![Color Pallete](static/images/readme/palette.png)
+</details>
+
+<details><summary>Fonts</summary>
+The font used throughout the website is Space Grotesk. I used only 1 font for the site, but used text-transform to make some of the text uppercase.
+
+![Fonts](static/images/readme/readme-font.png)
+</details>
+
+***
+
+# Features
+## Existing Features
 <details><summary>Home Page</summary>
  
 The first thing users are greeted to is the Home Page. This is where you will find everything to navigate the website.
@@ -242,11 +263,55 @@ When the user has confirmed their new password, they are taken to a page informi
 
 </details>
 
-### Features Left to Implement
+## Features Left to Implement
 
-## Technologies
+<details><summary>Password Reset</summary>
+I would like to implement a password reset feature. This would send an email to the users associated email address with a temporary password. They would then use said password to gain access to their account and change their password manually.
+</details>
 
-## Testing
+<details><summary>Contact Us</summary>
+I would like to eventually implement a Contact Us page to the website. Users would be able to send enquiries to me via a form.
+</details>
+
+<details><summary>Reply to comments</summary>
+I would like to add a feature that allows the user to reply to comments on a post. This could be a reply in a thread format or something else entirely. This would add a personal touch to the comments section, enabling users to interact with one another.
+</details>
+
+***
+
+# Technologies
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
+* [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+* [Heroku](https://dashboard.heroku.com/)
+    * Heroku is the site used to deploy the project.
+* [GitHub](https://github.com/)
+    * GitHub is the hosting site I used to store the code for the website.
+* [GitPod](https://gitpod.io/)
+    * GitPod is the Integrated Development Environment used to develop the website in a browser.
+* [Font Awesome](https://fontawesome.com/)
+    * Font Awesome icons are used for the social media links located in the Footer section of the website.
+* [Google Fonts](https://fonts.google.com/)
+    * Google fonts are used in the project to import the **Space Grotesk** font.
+* [Quicktools by Picsart](https://tools.picsart.com/)
+    * Quicktools by Picsart is used to generate the image of the color pallete.
+* [Am I Responsive?](http://ami.responsivedesign.is/)
+    * Am I Responsive is used to generate the website mock up.
+* [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/)
+    * The built in developer tools in Google Chrome are used to test CSS styles, inspect page elements and help with debugging problems with the layout of the website.
+* [Stack Overflow](https://stackoverflow.com/)
+    * Stack Overflow was the primary source for help regarding issues.
+* [W3 Schools](https://www.w3schools.com/)
+    * W3 Schools was one of the websites used for resolving issues with code.
+
+***
+
+# Testing
+
+***
 
 ## Validator Testing
 
@@ -254,7 +319,7 @@ When the user has confirmed their new password, they are taken to a page informi
 
 To ensure all code for Gamernetic was correct, validation through various validators was performed. The results are listed below.
 
-- ### HTML Validation
+* HTML Validation
 
   All HTML code was checked with the [W3C Markup Validation Service](https://validator.w3.org/).
 
@@ -308,7 +373,7 @@ To ensure all code for Gamernetic was correct, validation through various valida
 
    </details>
    
-- ### CSS Validation
+* CSS Validation
 
   All CSS code was checked with the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
 
@@ -319,7 +384,7 @@ To ensure all code for Gamernetic was correct, validation through various valida
 
    </details>
    
-- ### Python Validation
+* Python Validation
 
   All Python code was checked with the [PEP8 Online Service](http://pep8online.com/).
 
@@ -360,8 +425,14 @@ To ensure all code for Gamernetic was correct, validation through various valida
 
   </details>
 
+***
+
 ## Issues and Resolutions
 
-## Deployment
+***
 
-## Credits
+# Deployment
+
+***
+
+# Credits
