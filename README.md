@@ -27,16 +27,27 @@ Please note: To open any links in this document in a new browser tab, please pre
 
 ## User Experience
 ### User Stories
-#### First Time Visitor Goals
+#### First Time User Goals
+* As a First Time User, I clearly understand the main objective of the website.
+* As a First Time User, I can easily navigate through the website.
 * As a First Time User, I can register an account to gain full access to the website.
+* As a First Time User, I can view more from the creator of the website via their social media accounts.
+* As a First Time User, I can choose a post I would like to inspect further.
 
-#### Frequent Visitor Goals
-* As a Frequent Visitor I can log in to gain access to my account.
+#### Frequent User Goals
+* As a Frequent User, I can log in to gain access to my account.
+* As a Frequent User, I can create my own blog post and post it on the website.
+* As a Frequent User, I can edit or delete my own posts.
+* As a Frequent User, I can comment on a blog post with my thoughts on the subject.
+* As a Frequent User, I can like a post to show that I enjoyed it.
+* As a Frequent User, I can share a post to my own personal social media account.
+* As a Frequent User, I can change aspects of my personal account details.
+* As a Frequent User, I can change my password incase their is a security risk.
 
 #### Admin User Goals
-* As an Admin I can create, read, update and delete posts so that I can manage my blog content.
-* As an Admin I can create draft posts so that I can finish writing the content later.
-* As an Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+* As an Admin, I can create, read, update and delete posts so that I can manage my blog content.
+* As an Admin, I can create draft posts so that I can finish writing the content later.
+* As an Admin, I can approve or disapprove comments so that I can filter out objectionable comments.
 
 ## Design
 
@@ -52,10 +63,11 @@ Please note: To open any links in this document in a new browser tab, please pre
 ### Existing Features
 <details><summary>Home Page</summary>
  
-Featured.
+The first thing users are greeted to is the Home Page. This is where you will find everything to navigate the website.
+
 The purpose of this is to fulfill the following user stories:
 ```
-User Story
+As a First Time User, I clearly understand the main objective of the website.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188748847-5563753e-e0d7-4d44-a1b1-7996547ff706.png)
  
@@ -64,11 +76,10 @@ User Story
 <details><summary>Navigation Bar</summary>
  
 Featured at the top of all pages is the nav bar, holding the Gamernetic logo and all links to the home page, register page and log in page.
+
 The purpose of this is to fulfill the following user stories:
 ```
-As a First Time User, I can register an account to gain full access to the website.
-
-As a Frequent Visitor I can log in to gain access to my account.
+As a First Time User, I can easily navigate through the website.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188245525-36fe6adc-d3e7-45dc-80f7-5130991190b2.png)
 
@@ -80,10 +91,11 @@ I have also set up the Nav Bar to be viewed on smaller screen sizes, with the he
 
 <details><summary>Footer</summary>
  
-Featured.
+Featured at the bottom of all pages is the footer, holding all links to my personal social media accounts.
+
 The purpose of this is to fulfill the following user stories:
 ```
-User Story
+As a First Time User, I can view more from the creator of the website via their social media accounts.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188749256-c830d891-527d-4d64-ab4f-2c2d7c1ab900.png)
  
@@ -91,23 +103,54 @@ User Story
 
 <details><summary>Post Detail</summary>
  
-Featured.
+When one of the posts on the home page is clicked, the user is taken to post detail view. Here the user can see the author, date/time posted and the content itself.
+
+
+
 The purpose of this is to fulfill the following user stories:
 ```
-User Story
+As a First Time User, I can choose a post I would like to inspect further.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188749721-9345eef1-0846-4a4d-b8be-72f458072e50.png)
  
 </details>
 
+<details><summary>Like/Unlike</summary>
+ 
+Just below the post itself, two icons are visible. One of these being a clickable Like button that can only be interacted with when the user has logged in. The second icon shows the amount of comments the post has recieved.
+
+The purpose of this is to fulfill the following user story:
+```
+As a Frequent User, I can like a post to show that I enjoyed it.
+```
+![image](static/images/readme/like-unlike.png)
+
+I also added a link that will enable the user to share the blog post to their own Twitter account.
+
+The purpose of this is to fulfill the following user story:
+```
+As a Frequent User, I can share a post to my own personal social media account.
+```
+![image](static/images/readme/twitter-share.png)
+
+</details>
+
 <details><summary>Post Comments</summary>
  
-Featured.
-The purpose of this is to fulfill the following user stories:
+At the bottom of the post is the comments section, where the user is able to write and post a comment on the blog post.
+
+The purpose of this is to fulfill the following user story:
 ```
-User Story
+As a Frequent User, I can comment on a blog post with my thoughts on the subject.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188749804-bde80368-9193-471d-8a64-3e419e1adebe.png)
+
+When the user has posted a comment, an alert replaces the text field letting them know that their comment is awaiting inspection and approval.
+
+The purpose of this is to fulfill the following user story:
+```
+As an Admin, I can approve or disapprove comments so that I can filter out objectionable comments.
+```
 
 ![image](https://user-images.githubusercontent.com/98277650/188749923-dfdab3c8-331c-47c1-99a0-e4f917a0f4af.png)
  
@@ -115,10 +158,11 @@ User Story
 
 <details><summary>Add Post</summary>
  
-Featured.
+This page of the website allows the user to create their own blog post. I implemented a rich text editor which allows the user to add a bit more style to their post. For security reasons I have to give the user staff privileges to be able to post, which is common practice in other professional websites. This is to ensure that not just anyone off the internet can find my website and post questionable things.
+
 The purpose of this is to fulfill the following user stories:
 ```
-User Story
+As a Frequent User, I can create my own blog post and post it on the website.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188750032-7fd19423-9acf-4851-80fb-bb2af0e0365b.png)
 
@@ -126,25 +170,57 @@ User Story
 
 <details><summary>Edit/Delete Post</summary>
  
-Featured.
+If the user is the author of the post, two buttons appear on the post detail section giving them the ability to edit or delete the post. This is to aid the user in correcting issues with the post, or just to delete it and start again fresh.
+
 The purpose of this is to fulfill the following user stories:
 ```
-User Story
+As a Frequent User, I can edit or delete my own posts.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188750267-9fe41ace-f585-42a9-bafa-7c69fdb28e04.png)
 
 ![image](https://user-images.githubusercontent.com/98277650/188750296-f19bc082-072f-4a46-8a2a-2f2c240afc16.png)
 
+When the user clicks the delete button they are taken to a new page with a warning, making sure they are aware that they are about to permanently delete the post. This is so if they change their mind and want to keep it, they can.
+
 ![image](https://user-images.githubusercontent.com/98277650/188750325-c4fde938-07be-45cd-b2bd-5104da48feb0.png)
+
+</details>
+
+<details><summary>Register</summary>
+ 
+If the visitor likes the website, they are able to register an account. This enables the user to be able to like and comment on posts.
+
+The purpose of this is to fulfill the following user stories:
+```
+As a First Time User, I can register an account to gain full access to the website.
+```
+![image](static/images/readme/register.png)
+
+</details>
+
+<details><summary>Log In</summary>
+ 
+When the user returns to the website to see if any more blog posts have been created, they are able to log back in.
+
+The purpose of this is to fulfill the following user stories:
+```
+As a Frequent User, I can log in to gain access to my account.
+```
+![image](static/images/readme/login.png)
 
 </details>
 
 <details><summary>Edit Profile</summary>
  
-Featured.
+This page of the website enables the user to edit specific things regarding their account. These being:
+* Username
+* Email
+* First Name
+* Last Name
+
 The purpose of this is to fulfill the following user stories:
 ```
-User Story
+As a Frequent User, I can change aspects of my personal account details.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188750457-33d23728-d41b-4f35-b28f-2f82f222a4ee.png)
 
@@ -152,12 +228,15 @@ User Story
 
 <details><summary>Change Password</summary>
  
-Featured.
+Within the Edit Profile page the user also has the option to click a link to take them to a page allowing them to change their password. 
+
 The purpose of this is to fulfill the following user stories:
 ```
-User Story
+As a Frequent User, I can change my password incase their is a security risk.
 ```
 ![image](https://user-images.githubusercontent.com/98277650/188750520-6c1ae6aa-0d5e-40cf-8503-e93681af33c1.png)
+
+When the user has confirmed their new password, they are taken to a page informing them that the change was successful.
 
 ![image](https://user-images.githubusercontent.com/98277650/188750658-7ab3a60d-910c-48ab-b3bd-b952d783273c.png)
 
