@@ -9,8 +9,8 @@
 * [Technologies](#technologies)
 * [Testing](#testing)
   * [Validator Testing](#validator-testing)
-  * [Lighthouse Reports](#lighthouse-reports)
-  * [Issues And Resolutions](#issues-and-resolutions)
+  * [Manual Testing](#manual-testing)
+  * [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 
@@ -31,13 +31,16 @@ Please note: To open any links in this document in a new browser tab, please pre
 # User Experience
 ## User Stories
 ### First Time User Goals
+<details><summary>First Time User Goals</summary>
+
 * As a First Time User, I clearly understand the main objective of the website.
 * As a First Time User, I can easily navigate through the website.
 * As a First Time User, I can register an account to gain full access to the website.
 * As a First Time User, I can view more from the creator of the website via their social media accounts.
 * As a First Time User, I can choose a post I would like to inspect further.
+</details>
+<details><summary>Frequent User Goals</summary>
 
-### Frequent User Goals
 * As a Frequent User, I can log in to gain access to my account.
 * As a Frequent User, I can create my own blog post and post it on the website.
 * As a Frequent User, I can edit or delete my own posts.
@@ -46,11 +49,15 @@ Please note: To open any links in this document in a new browser tab, please pre
 * As a Frequent User, I can share a post to my own personal social media account.
 * As a Frequent User, I can change aspects of my personal account details.
 * As a Frequent User, I can change my password incase their is a security risk.
+</details>
 
-### Admin User Goals
+<details><summary>Admin User Goals</summary>
+
 * As an Admin, I can create, read, update and delete posts so that I can manage my blog content.
 * As an Admin, I can create draft posts so that I can finish writing the content later.
 * As an Admin, I can approve or disapprove comments so that I can filter out objectionable comments.
+</details>
+
 ***
 ## Design
 
@@ -442,29 +449,48 @@ To ensure all code for Gamernetic was correct, validation through various valida
 
   </details>
 
-## Lighthouse Reports
+* Accessibility
 
-<details><summary>Home Page</summary>
+  The websites accessibility was tested with the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/).
 
-![](lighthousereporthere)
-![](lighthousereporthere)
+  <details>
+  <summary>WAVE report</summary>
 
-</details>
-<details><summary>Log In</summary>
+  ![image](static/images/readme/wave.png)
 
-![](lighthousereporthere)
-![](lighthousereporthere)
+  </details>
 
-</details>
+## Manual Testing
+
+  I tested that the website is responsive, functions well and looks good on all screen sizes using Google Dev Tools and Responsive Design Checker.
+
+  <details><summary>Google Doc</summary>
+
+  ![image](static/images/readme/manual-testing.png)
+
+  </details>
 
 ***
 
-## Issues and Resolutions
+## Bugs
+For this website I decided to open a project on the GitHub repository, that I would add to as I go along. This is to aid with the transparency of my coding, showing the bugs I encountered and how they were fixed.  
+* [CKEDITOR causing deployment failure](https://github.com/jrdnbrkfld/pp4-gamernetic/issues/23)
+* [Requires the user to create their own slug field.](https://github.com/jrdnbrkfld/pp4-gamernetic/issues/25)
 
 ***
 
 # Deployment
 
+ This project was deployed using Code Institute's mock terminal for Heroku.
+* Fork or clone this repository
+* Create a new Heroku app
+* Set the buildpacks to Python and NodeJS in that order
+* Link the Heroku app to the repository
+* Click on Deploy
+
 ***
 
 # Credits
+I'd like to thank my mentor [Ronan McClelland](https://www.linkedin.com/in/ronanmcclelland/) for their help and support throughout this project. I'd also like to thank my cohorts in the Code Institute Slack community, and the Tutor Assistance for all their help with code issues.
+
+The [Code Institute Python Template](https://github.com/Code-Institute-Org/python-essentials-template) was used as a base for this project and made into my own.
