@@ -9,6 +9,7 @@
 * [Technologies](#technologies)
 * [Testing](#testing)
   * [Validator Testing](#validator-testing)
+  * [Lighthouse Reports](#lighthouse-reports)
   * [Issues And Resolutions](#issues-and-resolutions)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -56,8 +57,26 @@ Please note: To open any links in this document in a new browser tab, please pre
 <details>
 <summary>Wireframes</summary>
 
-![index-desktop-wireframe](https://user-images.githubusercontent.com/98277650/177381328-736c7454-6a29-4ba5-8a5b-94af1189cc14.png)
-![index-mobile-wireframe](https://user-images.githubusercontent.com/98277650/177381382-971e05ca-ca33-46c5-9997-61c2210c2a18.png)
+* Home Page Desktop:
+
+![index-desktop-wireframe](static/images/readme/wireframes/index-desktop-wireframe.png)
+
+* Home Page Mobile:
+
+![index-mobile-wireframe](static/images/readme/wireframes/index-mobile-wireframe.png)
+
+* Post Content:
+
+![post-content-wireframe](static/images/readme/wireframes/post-content.png)
+
+* Add Post:
+
+![add-post-wireframe](static/images/readme/wireframes/add-post.png)
+
+* Log In:
+
+![log-in-wireframe](static/images/readme/wireframes/log-in.png)
+
 </details>
 
 <details><summary>Imagery</summary>
@@ -311,8 +330,6 @@ I would like to add a feature that allows the user to reply to comments on a pos
 
 # Testing
 
-***
-
 ## Validator Testing
 
 ### Code Validation
@@ -424,6 +441,21 @@ To ensure all code for Gamernetic was correct, validation through various valida
   ![image](https://user-images.githubusercontent.com/98277650/188005494-cc4cd2bd-4cd8-446a-a2a2-0681761026f8.png)
 
   </details>
+
+## Lighthouse Reports
+
+<details><summary>Home Page</summary>
+
+![](lighthousereporthere)
+![](lighthousereporthere)
+
+</details>
+<details><summary>Log In</summary>
+
+![](lighthousereporthere)
+![](lighthousereporthere)
+
+</details>
 
 ***
 
