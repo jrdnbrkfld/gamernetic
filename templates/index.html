@@ -8,7 +8,7 @@
     <div class="container-fluid" id="image">
         <div class="row px-4 text-center">
             <img class="img-fluid header-image" id="main-background"
-                src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1662036640/placeholder_vnzsfr_smds1a.jpg"
+                src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1662036640/placeholder_vnzsfr_smds1a.webp"
                 alt="Background image">
             <div class="col-lg-6 mx-auto">
                 <div class="caption">
@@ -33,10 +33,10 @@
                             <div class="image-container">
                                 <a href="{% url 'post_detail' post.slug %}" class="text-dark text-decoration-none">
                                     {% if "placeholder" in post.featured_image.url %}
-                                    <img class="card-img-top rounded" alt="Authors chosen image to represent the post"
-                                        src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1662036640/placeholder_vnzsfr_smds1a.jpg">
+                                    <img class="card-img-top rounded" width="auto" height="200" alt="Gamernetics placeholder image"
+                                        src="https://res.cloudinary.com/dhyy9pzrd/image/upload/v1662036640/placeholder_vnzsfr_smds1a.webp">
                                     {% else %}
-                                    <img class="card-img-top" alt="Gamernetics placeholder image"
+                                    <img class="card-img-top" alt="Authors chosen image to represent the post"
                                         src=" {{ post.featured_image.url }}">
                                     {% endif %}
                                     <div class="image-flash">
